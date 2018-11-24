@@ -58,7 +58,8 @@ alert(currentUrl);
 if(lastChar === '/')
 {
     //test
-	var prevSpot = currentUrl.lastIndexOf('/', currentUrl.length - 1);
+    //https://www.domain.com/about/
+	var prevSpot = currentUrl.lastIndexOf('/', currentUrl.length - 2);
 	var slug = currentUrl.substring(prevSpot, currentUrl.length - 1);
     alert(slug);
     var slugs = ["above", "about", "albiet"];
