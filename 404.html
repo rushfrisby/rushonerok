@@ -59,7 +59,14 @@ if(lastChar === '/')
 {
 	var prevSpot = currentUrl.lastIndexOf('/', 1);
 	var slug = currentUrl.substring(prevSpot, currentUrl.length - 1);
-	alert(slug);
+    alert(slug);
+    var slugs = ["above", "about", "albiet"];
+    for (i = 0; i < slugs.length; i++) {
+        if(slug === slugs[i])
+        {
+            alert('found');
+        }
+    }
 }
 </script>
 </div>
